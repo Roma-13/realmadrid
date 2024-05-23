@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+  width: 100%;
+  height: fit-content;
+  background-color: #5caafd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 20px;
+  font-size: 75px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 5px;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages > div {
+  margin-right: 10px;
+  padding: 10px 10px;
+}
+
+.pages > div > * {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+}
+
+.pages > div:hover {
+  background-color: white;
+}

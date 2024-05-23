@@ -1,0 +1,178 @@
+*{
+    font-family: 'RMNeue';
+}
+@font-face {
+    font-family: 'RMNeue';
+    src: url(RMNeue-Bold.ttf);
+}
+body{
+    background: linear-gradient(90deg, #6610B6 0%, #0A0003 35%, #1C3C85 100%);
+  }
+  .title{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    margin-bottom:40px;
+  }
+  
+  .tab{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .item{
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    color: white;
+    border-radius: 30px;
+  }
+  
+  .item:hover{
+    background-color: #2E3037;
+  }
+  
+  .active{
+    background-color: white;
+    color: #6200EA;
+    border: 1px solid lightsky#6200EA;
+  }
+  
+  .item.active:hover{
+    background-color: white;
+    border: none;
+  }
+  
+  .inside-card{
+    margin: 30px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card{
+    width: 1250px;
+    height: 700px;
+    background-color: white;
+    border-radius: 30px;
+    display:flex;
+    justify-content: center;
+  }
+  
+  .windowsize{
+    width: 600px;
+  }
+  
+  .fonttitle{
+    font-size: 35px;
+    margin-top: 25px;
+  }
+
+  .price{
+    color:rgb(71, 66, 66);
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .size{
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .badge{
+    font-size: 16px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+  .badge-button {
+    color:rgb(71, 66, 66);
+    padding: 8px 10px;
+    background-color: white;
+    border: 1px solid #6200EA;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.badge-button:hover {
+    background-color: rgba(218, 214, 214, 0.692);
+}
+.thumb{
+    height: 200px;
+}
+
+.thumb.active{
+    border: 1px solid #6200EA;
+}
+
+.thumbnails{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.carousel-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.prev,.next{
+    position: absolute;
+    bottom: 50px;
+    transform: translateY(50%);
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    color: #6200EA;
+    cursor: pointer;
+    
+}
+.prev{
+    left: 50px;
+}
+
+.next{
+    right: 50px;
+}
+
+.crossed{
+    text-decoration: line-through;
+}
+
+.mysize{
+    display: flex;
+    justify-content: left;
+    gap: 7px;
+}
+
+.radial{
+    padding: 5px 13px;
+    background-color: #F3F5F8;
+    border: 1px solid grey;
+    border-radius: 20px;
+    color:rgb(138, 137, 137);
+}
+
+.radial:hover:not(.crossed){
+    background-color: rgba(218, 214, 214, 0.692);
+    border: 1px solid #6200EA;
+    color: #6200EA;
+}
+.radial.active-size {
+    border: 2px solid #6200EA;
+}
+.carousel-container .main-image img{
+    width: 500px;
+}
+
+.thumbnails{
+    overflow-x: scroll;
+    width: 500px;
+}
